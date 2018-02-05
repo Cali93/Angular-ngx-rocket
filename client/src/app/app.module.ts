@@ -7,6 +7,10 @@ import { TranslateModule } from '@ngx-translate/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 
+export const firebaseConfig = environment.firebase;
+import { AngularFireModule } from 'angularfire2';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
+
 import { environment } from '@env/environment';
 import { CoreModule } from '@app/core';
 import { SharedModule } from '@app/shared';
@@ -34,7 +38,9 @@ import { ChatModule } from '@app/chat/chat.module';
     LoginModule,
     StartModule,
     ChatModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFirestoreModule,
+    AngularFireModule.initializeApp(firebaseConfig)
   ],
   declarations: [AppComponent],
   providers: [

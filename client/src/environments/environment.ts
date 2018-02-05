@@ -11,5 +11,13 @@ export const environment = {
   supportedLanguages: [
     'en-US',
     'fr-FR'
-  ]
+  ],
+  firebase: {
+    apiKey: 'AIzaSyDmaQtnzCMBx35cNu8lIJMIBIzovxU4MmY',
+    authDomain: 'beesquad-da9cc.firebaseapp.com',
+    databaseURL: 'https://beesquad-da9cc.firebaseio.com',
+    projectId: 'beesquad-da9cc',
+    storageBucket: 'beesquad-da9cc.appspot.com',
+    messagingSenderId: '1092125124082'
+  }
 };
