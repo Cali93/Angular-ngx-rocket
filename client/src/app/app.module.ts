@@ -16,6 +16,7 @@ import { LoginModule } from './login/login.module';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { StartModule } from '@app/start/start.module';
+import { ChatModule } from '@app/chat/chat.module';
 
 @NgModule({
   imports: [
@@ -32,6 +33,7 @@ import { StartModule } from '@app/start/start.module';
     AboutModule,
     LoginModule,
     StartModule,
+    ChatModule,
     AppRoutingModule
   ],
   declarations: [AppComponent],
