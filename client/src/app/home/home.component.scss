@@ -1,0 +1,26 @@
+@import "src/theme/custom-palettes";
+
+.container {
+  text-align: center;
+  padding: 1em;
+}
+
+.logo {
+  width: 150px;
+  margin: 0 auto;
+}
+
+q {
+  color: $yelight;
+  font-style: italic;
+  quotes: "« " " »";
+}
+
+mat-card-title{
+  color: $oranjuice;
+}
+
+.mat-button {
+  color: $yelight;
+  background: $brownie;
+}
