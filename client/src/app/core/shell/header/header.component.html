@@ -42,6 +42,18 @@
         <span translate>Logged in as</span>&nbsp;<b>{{username}}</b>
       </mat-list-item>
       <mat-divider></mat-divider>
+      <button mat-menu-item routerLink="/login" routerLinkActive="active">
+        <i class="fas fa-sign-in-alt"></i>
+        <span translate>Login</span>
+      </button>
+      <button mat-menu-item routerLink="/signup" routerLinkActive="active">
+        <i class="fas fa-user-plus"></i>
+        <span translate>Sign-up</span>
+      </button>
+      <button mat-menu-item routerLink="/profile" routerLinkActive="active">
+        <i class="fa fa-question-circle"></i>
+        <span translate>Profile settings</span>
+      </button>
     </mat-list>
     <button mat-menu-item (click)="logout()" translate>Logout</button>
   </mat-menu>

@@ -1,4 +1,8 @@
 ✔ Add the chat component to the routes, app.module, nav & sidebar @done (2018-2-5 18:19:00)
 ✔ Configure firebase through enviroment files @done (2018-2-5 19:20:10)
+project-1092125124082 (firebase note)
 
 ☐ Start coding the chat
+    ✔ Traduire login/signup @done (2018-2-5 20:14:48)
+    ✔ Prendre icons login/signup fontawesome @done (2018-2-5 20:14:50)
+    ☐ Ajouter profile route + app.module + nav & sidebar

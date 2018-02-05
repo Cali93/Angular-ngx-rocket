@@ -20,6 +20,18 @@
             <span translate>About</span>
           </a>
           <mat-divider></mat-divider>
+          <a mat-list-item routerLink="/login" routerLinkActive="active" (click)="sidenav.close()">
+            <span translate>Login</span>
+          </a>
+          <mat-divider></mat-divider>
+          <a mat-list-item routerLink="/signup" routerLinkActive="active" (click)="sidenav.close()">
+            <span translate>Sign-up</span>
+          </a>
+          <mat-divider></mat-divider>
+          <a mat-list-item routerLink="/profile" routerLinkActive="active" (click)="sidenav.close()">
+            <span translate>Profile</span>
+          </a>
+          <mat-divider></mat-divider>
         </mat-list>
       </nav>
     </mat-sidenav>

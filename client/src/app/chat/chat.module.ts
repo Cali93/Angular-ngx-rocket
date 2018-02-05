@@ -7,9 +7,10 @@ import { MaterialModule } from '@app/material.module';
 
 import { ChatRoutingModule } from './chat-routing.module';
 import { ChatComponent } from './chat.component';
-import { SideinfosComponent } from './sideinfos/sideinfos.component';
-import { MessageinputComponent } from './messageinput/messageinput.component';
-import { MessagefeedComponent } from './messagefeed/messagefeed.component';
+import { FeedComponent } from './feed/feed.component';
+import { MessageComponent } from './message/message.component';
+import { UserItemComponent } from './user-item/user-item.component';
+import { UserListComponent } from './user-list/user-list.component';
 
 @NgModule({
   imports: [
@@ -19,6 +20,6 @@ import { MessagefeedComponent } from './messagefeed/messagefeed.component';
     MaterialModule,
     ChatRoutingModule
   ],
-  declarations: [ChatComponent, SideinfosComponent, MessageinputComponent, MessagefeedComponent]
+  declarations: [ChatComponent, FeedComponent, MessageComponent, UserItemComponent, UserListComponent]
 })
 export class ChatModule { }

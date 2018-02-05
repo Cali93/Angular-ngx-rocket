@@ -14,6 +14,8 @@ import { AuthenticationGuard } from './authentication/authentication.guard';
 import { I18nService } from './i18n.service';
 import { HttpService } from './http/http.service';
 import { HttpCacheService } from './http/http-cache.service';
+import { AngularFireAuthModule } from 'angularfire2/auth';
+import { AngularFirestoreModule } from 'angularfire2/firestore';
 
 export function createHttpService(backend: ConnectionBackend,
                                   defaultOptions: RequestOptions,
@@ -28,7 +30,9 @@ export function createHttpService(backend: ConnectionBackend,
     TranslateModule,
     FlexLayoutModule,
     MaterialModule,
-    RouterModule
+    RouterModule,
+    AngularFireAuthModule,
+    AngularFirestoreModule
   ],
   declarations: [
     HeaderComponent,
