@@ -4,8 +4,10 @@ import { Routes, RouterModule } from '@angular/router';
 import { Route, extract } from '@app/core';
 import { ChatComponent } from './chat.component';
 
+import { AuthenticationGuard } from './../core/authentication/authentication.guard';
+
 const routes: Routes = Route.withShell([
-  { path: 'chat', component: ChatComponent, data: { title: extract('Start') } }
+  { path: 'chat', component: ChatComponent, data: { title: extract('Start') }, canActivate: [AuthenticationGuard]}
 ]);
 
 @NgModule({
